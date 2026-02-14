@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mourya N | Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Mouse Trail -->
+    <canvas id="trail-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">&lt;MN/mou.dev&gt;</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello.. I'm</span>
+                        <span class="name">Mourya N</span>
+                    </h1>
+                    <div class="hero-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Software Developer</span>
+                    </div>
+                    <div class="hero-typewriter">
+                        <span class="static-text">I build </span>
+                        <span class="dynamic-text" id="typewriter"></span>
+                    </div>
+                    <p class="hero-description">
+                        Aspiring Software Development Engineer with expertise in building secure, 
+                        scalable applications and solving complex problems through elegant code.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>I'd love to hear from you!</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="/download-resume" class="btn btn-outline" download>
+                            <span>Download Resume</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Social Links in Hero -->
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/mourya-n/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Mourya-N" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/MouryaN23" target="_blank" class="social-icon">
+                            <i class="fab fa-x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/n_mouryaa/" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/manjula.nagu.96" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="profile-container">
+                        <div class="profile-frame">
+                            <img src="images/profile.jpg" alt="Mourya N" class="profile-image">
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span>About Me</span>
+                <i class="fas fa-user-circle"></i>
+            </h2>
+            <div class="projects-grid">
+                <!-- Mobile Wallet Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4 align ="center">Software Engineering undergraduate with strong foundations in data structures, algorithms, and distributed
+systems, and hands-on experience building scalable, secure, and production-ready applications. Experienced in
+designing backend services, automating workflows, and improving system reliability. Passionate about AI-driven
+solutions, rapid iteration, and live-site reliability, with a growth mindset and strong interest in building impactful,
+customer-focused products at scale.</h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="about-grid">
+                <!-- Education Box -->
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="edu-item">
+                            <h4>Bachelor of Engineering</h4>
+                            <p class="edu-sub">Computer Science</p>
+                            <p class="edu-institute">Sri Krishna Institute of Technology, Bengaluru</p>
+                            <p class="edu-year">2022 - 2026</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hackathons Box -->
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Hackathons</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul class="about-list">
+                            <li><i class="fas fa-code"></i> CTRL+Move 2025</li>
+                            <li><i class="fas fa-code"></i> Solana Hacker House 2024</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Volunteering Box -->
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Volunteering</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul class="about-list">
+                            <li><i class="fas fa-calendar-check"></i> India Blockchain Week (IBW) 2025</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Events Attended Box -->
+                <div class="about-card">
+                    <div class="card-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Industry Events</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul class="about-list">
+                            <li><i class="fas fa-calendar-alt"></i> Microsoft AI Tour 2025</li>
+                            <li><i class="fas fa-calendar-alt"></i> Google I/O Connect India 2024 & 2025</li>
+                            <li><i class="fas fa-calendar-alt"></i> AWS Summit & AI Conclave 2025 & 2026</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span>Technical Skills</span>
+                <i class="fas fa-cogs"></i>
+            </h2>
+            
+            <div class="skills-container">
+                <!-- Frontend & Backend -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Languages - Frontend & Backend
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5" style="color: #e34f26;"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js" style="color: #f7df1e;"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react" style="color: #61dafb;"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node" style="color: #3c873a;"></i>
+                            <span>Node.js</span>
+                        </div>
+                         <div class="skill-item">
+                            <i class="fab fa-c" style="color: #0035d2;"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python" style="color: #3776ab;"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java" style="color: #007396;"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-plug" style="color: #7b68ee;"></i>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Databases -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i>
+                        Databases
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-database" style="color: #4479a1;"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf" style="color: #4db33d;"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire" style="color: #ffca28;"></i>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Core CS Subjects -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-microchip"></i>
+                        Core CS
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>DSA</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-desktop"></i>
+                            <span>Operating Systems</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cubes"></i>
+                            <span>OOP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-table"></i>
+                            <span>DBMS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Computer Networks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Platforms
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt" style="color: #f05032;"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github" style="color: #ffffff;"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux" style="color: #ffcc00;"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud" style="color: #4285f4;"></i>
+                            <span>Google Cloud</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lock" style="color: #00ff88;"></i>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span>Featured Projects</span>
+                <i class="fas fa-code"></i>
+            </h2>
+            
+            <div class="projects-grid">
+                <!-- Mobile Wallet Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Mobile Wallet with Multi-Currency Support</h3>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                            <span>CurrencyLayer API</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <ul class="project-features">
+                            <li>Designed and built a scalable backend service supporting multi-currency transactions including deposits, withdrawals, transfers, and balance management</li>
+                            <li>Integrated real-time exchange rate APIs, enabling accurate currency conversion and data-driven financial operations</li>
+                            <li>Improved developer efficiency by modularizing services and reusing common backend components</li>
+                            <li>Implemented secure authentication and authorization using JWT, bcrypt password hashing, and HTTPS-based API communication</li>
+                            <li>Focused on system reliability and data consistency by validating transactions and handling failures</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Candidate Ranking System -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Candidate Ranking and Selection System</h3>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <ul class="project-features">
+                            <li>Built a full-stack web application to automate candidate evaluation and ranking using structured data analysis</li>
+                            <li>Developed reusable CRUD frameworks and server-side logic to support rapid feature iteration</li>
+                            <li>Designed relational database schemas and implemented complex SQL queries (joins, aggregates, nested queries) for dynamic filtering and ranking</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="certifications">
+                <h3 class="cert-title">
+                    <i class="fas fa-certificate"></i>
+                    Certifications
+                </h3>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Big Data Analytics (NPTEL 2025)</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Fundamentals of Cryptography (Infosys Springboard 2025)</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>DSA in Java (Greatlearning 2024)</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cyber Security (Ethicalbyte 2024)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span>Experience</span>
+                <i class="fas fa-briefcase"></i>
+            </h2>
+            
+            <div class="experience-timeline">
+                <!-- Internship -->
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-date">Jan 2026 - May 2026</div>
+                    <div class="exp-content">
+                        <h3>Software Engineer Intern - Java Full Stack</h3>
+                        <h4>Skylix Technologies Pvt. Ltd. | Bengaluru</h4>
+                        <ul>
+                            <li>Developing full-stack web applications using Java, Spring Boot, HTML, CSS, and JavaScript</li>
+                            <li>Working with MySQL databases, writing optimized queries and implementing CRUD operations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Volunteer -->
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-date">Dec 2025</div>
+                    <div class="exp-content">
+                        <h3>Volunteer</h3>
+                        <h4>India Blockchain Week (IBW) 2025 | Bengaluru</h4>
+                        <ul>
+                            <li>Supported conference operations and engaged with Web3 developer community</li>
+                            <li>Assisted in organizing blockchain-focused events and networking sessions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section (After Experience) -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="resume-card">
+                <div class="resume-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h2>View My Resume</h2>
+                <p>Download my detailed resume to learn more about my experience and skills</p>
+                <div class="resume-buttons">
+                    <a href="/resume" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View Resume
+                    </a>
+                    <a href="/download-resume" download class="btn btn-outline">
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span>Get In Touch</span>
+                <i class="fas fa-paper-plane"></i>
+            </h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:nmourya189@gmail.com">nmourya189@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <span>Phone</span>
+                                <a href="tel:+918861249940">+91 8861249940</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Bengaluru, Karnataka 560073</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/mourya-n/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Mourya-N" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://x.com/MouryaN23" target="_blank" class="social-link">
+                                <i class="fab fa-x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/n_mouryaa/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/manjula.nagu.96" target="_blank" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Mourya N. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
